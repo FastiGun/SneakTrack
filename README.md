@@ -34,7 +34,7 @@ Assurez-vous d'avoir les éléments suivants installés :
 1. Clonez le dépôt :
 
    ```bash
-   git clone https://github.com/your-username/sneaktrack-frontend.git
+   git clone https://github.com/{your-username}/sneaktrack.git
    cd sneaktrack-frontend
    ```
 
@@ -49,10 +49,10 @@ Assurez-vous d'avoir les éléments suivants installés :
 3. Créez un fichier `.env` à la racine du projet et ajoutez les variables d'environnement suivantes :
 
    ```env
-   REACT_APP_API_URL=http://localhost:5000
+   REACT_APP_API_URL=http://localhost:3000
    ```
 
-   Remplacez `http://localhost:5000` par l'URL de votre serveur backend.
+   Remplacez `http://localhost:3000` par l'URL de votre serveur backend.
 
 4. Lancez le serveur de développement :
 
@@ -63,21 +63,6 @@ Assurez-vous d'avoir les éléments suivants installés :
    ```
 
 5. Ouvrez [http://localhost:3000](http://localhost:3000) dans votre navigateur pour voir l'application.
-
----
-
-## Structure du projet
-
-```plaintext
-src/
-├── components/       # Composants réutilisables
-├── pages/            # Composants de pages (ex. : Dashboard, AddSneaker)
-├── services/         # Appels API et logique métier
-├── styles/           # Styles globaux ou fichiers SCSS
-├── App.js            # Point d'entrée principal de l'application
-├── index.js          # Rendu DOM de React
-└── ...
-```
 
 ---
 
@@ -107,25 +92,6 @@ npm run lint
 yarn lint
 ```
 
----
-
-## Contribuer
-
-Les contributions sont les bienvenues ! Veuillez suivre ces étapes :
-
-1. Forkez le dépôt.
-2. Créez une nouvelle branche (`git checkout -b nom-de-la-fonctionnalité`).
-3. Commitez vos modifications (`git commit -m 'Ajout d'une fonctionnalité'`).
-4. Pushez votre branche (`git push origin nom-de-la-fonctionnalité`).
-5. Ouvrez une pull request.
-
----
-
-## Licence
-
-Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
-
----
 
 ## Contact
 
