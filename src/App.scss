@@ -1,0 +1,60 @@
+// Variables de couleur
+$color-bg: #121212;
+$color-bg-secondary: #1E1E1E;
+$color-text-primary: #E0E0E0;
+$color-text-secondary: #B0B0B0;
+$color-accent-primary: #4CAF50;
+$color-accent-secondary: #FF5722;
+$color-line: #333333;
+$color-hover: #388E3C;
+
+// Reset global et styles de base
+body {
+  background-color: $color-bg;
+  color: $color-text-primary;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  color: $color-text-primary;
+}
+
+p {
+  color: $color-text-secondary;
+}
+
+.App{
+
+  .App-header{
+
+    padding: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+
+    .logo img{
+      transition: 0.2s;
+      width: 200px;
+    }
+
+    .logo img:hover{
+      opacity: 0.7;
+      transition: 0.2s;
+    }
+
+    a{
+      text-decoration: none;
+      transition: 0.2s;
+    }
+
+    a:hover{
+      opacity: 0.7;
+      transition: 0.2s;
+    }
+  }
+}
