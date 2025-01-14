@@ -1,0 +1,30 @@
+.navbar{
+
+    padding: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+
+    .logo img{
+      transition: 0.2s;
+      width: 200px;
+    }
+
+    .logo img:hover{
+      opacity: 0.7;
+      transition: 0.2s;
+    }
+
+    a{
+      text-decoration: none;
+      transition: 0.2s;
+    }
+
+    a:hover{
+      opacity: 0.7;
+      transition: 0.2s;
+    }
+  }

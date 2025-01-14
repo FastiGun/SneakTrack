@@ -12,7 +12,7 @@ function Login() {
   return (
     <div className="login-container">
       <form onSubmit={handleSubmit}>
-        <div className="form-group">
+        <div className="form-group form-mail">
           <input
             placeholder='Adresse mail'
             type="text"
@@ -22,7 +22,7 @@ function Login() {
             required
           />
         </div>
-        <div className="form-group">
+        <div className="form-group form-password">
           <input
             placeholder='Mot de passe'
             type="password"
@@ -32,11 +32,12 @@ function Login() {
             required
           />
         </div>
-        <button type="submit">Me connecter</button>
-        <a href="/register">Je n'ai pas de compte</a>
+        <button className="form-button-validate" type="submit">Me connecter</button>
+        <a className="form-link form-bad-password" href="/register">Mot de passe oublié</a>
+        <a className="form-link" href="/register">Je n'ai pas de compte</a>
       </form>
     </div>
   );
 }
 
-export default Login;
+export default Login; 
