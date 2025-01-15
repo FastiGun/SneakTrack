@@ -1,0 +1,23 @@
+@import '../../App.scss';
+
+.form-group{
+    width: 100%;
+}
+
+input{
+    transition: 0.2s;
+    width: 100%;
+    height: 3rem;
+    font-size: 1rem;
+    background-color: $color-bg-secondary;
+    border: none;
+    color: $color-text-primary;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+input:hover, .form-password input:hover{
+    opacity: 0.7;
+    font-size: 1.05rem;
+    transition: 0.2s;
+}

@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import './login.scss';
+import Input from '../../Components/Input/Input';
+import Button from '../../Components/Button/Button';
+import Link from '../../Components/Link/Link';
 
 function Login() {
   const [mail, setMail] = useState('');
@@ -10,33 +13,42 @@ function Login() {
   };
 
   return (
-    <div className="login-container">
+    <>
+      <h1 className="title">Connexion</h1>
       <form onSubmit={handleSubmit}>
-        <div className="form-group form-mail">
-          <input
-            placeholder='Adresse mail'
-            type="text"
-            id="mail"
-            value={mail}
-            onChange={(e) => setMail(e.target.value)}
-            required
-          />
+        <Input
+          placeholder='Adresse mail'
+          type="email"
+          id="mail"
+          value={mail}
+          onChange={(e) => setMail(e.target.value)}
+          required
+        />
+        <Input
+          placeholder='Mot de passe'
+          type="password"
+          id="password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          required
+        />
+        <Button className="form-button-validate" type="submit">Se connecter</Button>
+        <div className="form-links">
+          <Link
+            className="form-link"
+            href="/forgot-password"
+          >
+            Mot de passe oublié
+          </Link>
+          <Link
+            className="form-link"
+            href="/register"
+          >
+            Je n'ai pas de compte
+          </Link>
         </div>
-        <div className="form-group form-password">
-          <input
-            placeholder='Mot de passe'
-            type="password"
-            id="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
-        </div>
-        <button className="form-button-validate" type="submit">Me connecter</button>
-        <a className="form-link form-bad-password" href="/register">Mot de passe oublié</a>
-        <a className="form-link" href="/register">Je n'ai pas de compte</a>
       </form>
-    </div>
+    </>
   );
 }
 

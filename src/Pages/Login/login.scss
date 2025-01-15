@@ -1,46 +1,26 @@
 @import '../../App.scss';
 
-.login-container{
-    height: 50vh;
-    width: 100%;
+form{
     display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    height: 50vh;
+    max-width: 500px;
     align-items: center;
     justify-content: center;
+    margin: auto;
 
-    form{
+    .form-links{
+        margin-top: 2em;
         display: flex;
-        flex-direction: column;
-        gap: 30px;
-        align-items: center;
-        width: 500px;
-    }
-
-    .form-mail, .form-password{
         width: 100%;
-    }
-
-    .form-mail input, .form-password input{
-        transition: 0.2s;
-        width: 100%;
-        height: 3rem;
-        font-size: 1rem;
-        background-color: $color-bg-secondary;
-        border: none;
-        color: $color-text-primary;
-        padding: 1rem;
+        justify-content: space-between;
+        padding: 0 2em;
         box-sizing: border-box;
     }
-
-    .form-mail input:hover, .form-password input:hover{
-        opacity: 0.7;
-        font-size: 1.05rem;
-        transition: 0.2s;
-    }
-
-    .form-button-validate{
-        width: 100%;
-    }
 }
+
 
 
 

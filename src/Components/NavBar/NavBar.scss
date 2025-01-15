@@ -1,16 +1,19 @@
+@import '../../App.scss';
+
 .navbar{
 
-    padding: 20px;
+    padding: 10px 30px;
     margin-bottom: 50px;
     display: flex;
     justify-content: left;
     align-items: center;
     text-align: center;
-    gap: 20px;
+    gap: 3em;
+    border-bottom: solid grey 1px;
 
     .logo img{
       transition: 0.2s;
-      width: 200px;
+      width: 10em;
     }
 
     .logo img:hover{
@@ -20,11 +23,15 @@
 
     a{
       text-decoration: none;
+    }
+
+    a h3{
+      color: $color-text-primary;
       transition: 0.2s;
     }
 
-    a:hover{
-      opacity: 0.7;
+    a h3:hover{
+      color: $color-text-secondary;
       transition: 0.2s;
     }
   }

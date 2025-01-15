@@ -1,18 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+@import url('https://fonts.googleapis.com/css?family=Meow+Script');
+
 // Variables de couleur
 $color-bg: #121212;
 $color-bg-secondary: #1E1E1E;
 $color-text-primary: #E0E0E0;
-$color-text-secondary: #B0B0B0;
+$color-text-secondary: #999999;
+$color-text-third: #2c2c2c;
 $color-accent-primary: #4CAF50;
 $color-accent-secondary: #FF5722;
 $color-line: #333333;
 $color-hover: #388E3C;
 
+*{
+  font-family: 'Poiret One', cursive;
+  font-weight: 900;
+}
+
 // Reset global et styles de base
 body {
   background-color: $color-bg;
   color: $color-text-primary;
-  font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -24,3 +32,51 @@ h1, h2, h3 {
 p {
   color: $color-text-secondary;
 }
+
+.content{
+  margin: auto;
+  max-width: 900px;
+  justify-content: center;
+  align-items: center;
+}
+
+html {
+  font-size: 16px; // Valeur de base pour 1rem
+}
+
+h1 {
+  font-size: 4em;
+  font-family: 'Meow Script';
+  font-weight: 500;
+  margin-left: 0.5em;
+}
+
+h2 {
+  font-size: 1.7em;
+}
+
+h3 {
+  font-size: 1.4em;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+p {
+  font-size: 1em;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 14px; // Ajuster la taille de base pour les petits écrans
+  }
+}
+
+@media (max-width: 1000px) {
+  html {
+    font-size: 12px; // Ajuster la taille de base pour les petits écrans
+  }
+}
+
+

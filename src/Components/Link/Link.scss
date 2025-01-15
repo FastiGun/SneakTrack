@@ -1,0 +1,17 @@
+@import '../../App.scss';
+
+a {
+    color: $color-text-secondary;
+    text-decoration: none;
+}
+
+a p {
+    border-bottom: solid 1px $color-text-secondary;
+    padding-bottom: 5px;
+    transition: 0.2s;
+}
+
+a p:hover{
+    opacity: 0.7;
+    transition: 0.2s;
+}
