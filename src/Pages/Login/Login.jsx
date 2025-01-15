@@ -1,15 +1,31 @@
-import React, { useState } from 'react';
-import './login.scss';
+import React, { useState, useContext } from 'react';
+import './Login.scss';
 import Input from '../../Components/Input/Input';
 import Button from '../../Components/Button/Button';
 import Link from '../../Components/Link/Link';
+import { useNavigate } from 'react-router-dom';
+import AccountContext from '../../Contexts/AccountContext';
 
 function Login() {
   const [mail, setMail] = useState('');
   const [password, setPassword] = useState('');
+  const context = useContext(AccountContext); // Utilisation du context
+  const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    // Simule une requête d'authentification (remplacez par votre logique réelle)
+    // Vous pouvez par exemple, utiliser l'API Fetch pour envoyer les informations de connexion à votre backend
+
+    // En cas de succès de connexion
+    const user = {
+      username: mail, // Récupérez le nom d'utilisateur de votre backend
+      email: mail,
+      id: 123,
+    };
+    await context?.login(user);
+    navigate('/');
+
   };
 
   return (

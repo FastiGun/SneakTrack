@@ -11,27 +11,25 @@
     gap: 3em;
     border-bottom: solid grey 1px;
 
-    .logo img{
+    img{
       transition: 0.2s;
       width: 10em;
     }
 
-    .logo img:hover{
+    img:hover{
       opacity: 0.7;
       transition: 0.2s;
+      cursor: pointer;
     }
 
-    a{
-      text-decoration: none;
-    }
-
-    a h3{
+    h3{
       color: $color-text-primary;
       transition: 0.2s;
     }
 
-    a h3:hover{
+    h3:hover{
       color: $color-text-secondary;
       transition: 0.2s;
+      cursor: pointer;
     }
   }

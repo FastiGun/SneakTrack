@@ -1,12 +1,16 @@
 import "./NavBar.scss"
 import logo from '../../img/logo-nu.png'
+import { useNavigate } from 'react-router-dom';
 
 function NavBar() {
+
+  const navigate = useNavigate();
+
   return (
     <nav className='navbar'>
-        <a href="/" className="logo"><img src={logo} alt="Logo de SneakTrack" /></a>
-        <a href="/my-account"><h3>Mon compte</h3></a>
-        <a href="/our-journey"><h3>Notre histoire</h3></a>
+        <img onClick={() => navigate('/')} src={logo} alt="Logo de SneakTrack" />
+        <h3 onClick={() => navigate('/my-account') }>Mon compte</h3>
+        <h3 onClick={() => navigate('/our-journey') }>Notre histoire</h3>
     </nav>
   );
 }

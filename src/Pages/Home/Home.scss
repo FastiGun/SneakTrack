@@ -1,0 +1,32 @@
+@import '../../App.scss';
+
+.home{
+    padding: 0 1em;
+
+    h3{
+        margin-top: 3em;
+    }
+
+    .line{
+        display: flex;
+        align-items: center;
+        gap: 1em;
+
+        p{
+            text-align: justify;
+        }
+    }
+    
+    h {
+        color: $color-text-secondary;
+        border-bottom: solid 1px $color-text-secondary;
+        padding-bottom: 5px;
+        transition: 0.2s;
+    }
+    
+    h:hover{
+        opacity: 0.7;
+        transition: 0.2s;
+        cursor: pointer;
+    }
+}
