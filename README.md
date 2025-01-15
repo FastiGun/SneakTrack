@@ -95,4 +95,4 @@ yarn lint
 
 ## Contact
 
-Pour toute question ou suggestion, n'hésitez pas à contacter [Hugo Demont](mailto:your-email@example.com).
+Pour toute question ou suggestion, n'hésitez pas à contacter [Benjamin Hébert](mailto:benjamin760080@gmail.com).
