@@ -24,7 +24,7 @@ function Login() {
       id: 123,
     };
     await context?.login(user);
-    navigate('/');
+    navigate('/my-account');
 
   };
 

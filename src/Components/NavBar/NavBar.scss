@@ -5,31 +5,84 @@
     padding: 10px 30px;
     margin-bottom: 50px;
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
     gap: 3em;
     border-bottom: solid grey 1px;
 
-    img{
+    .navbar-gauche{
+
+      display: flex;
+      align-items: center;
+      gap: 3em;
+
+      img{
+        transition: 0.2s;
+        width: 10em;
+      }
+  
+      img:hover{
+        opacity: 0.7;
+        transition: 0.2s;
+        cursor: pointer;
+      }
+  
+      h3{
+        color: $color-text-primary;
+        transition: 0.2s;
+      }
+  
+      h3:hover{
+        color: $color-text-secondary;
+        transition: 0.2s;
+        cursor: pointer;
+      }
+  
+      .logo{
+        padding: 0;
+        margin: 0;
+        font-size: 3em;
+        font-weight: 700;
+        transition: 0.2s;
+      }
+  
+      .logo:hover{
+        color: $color-text-secondary;
+        transition: 0.2s;
+        cursor: pointer;
+      }
+    }
+
+    .avatar{
       transition: 0.2s;
+      width: 3.5em;
+      height: 3.5em;
+      border-radius: 100%;
+      background-color: $color-accent-primary;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      h1{
+        font-size: 2em;
+        font-weight: 700;
+        transform: translateX(-50%);
+      }
+
+    }
+
+    .avatar:hover{
+      background-color: $color-accent-secondary;
+      transition: 0.2s;
+      cursor: pointer;
+    }
+      
+    .modal{
+      height: 10em;
       width: 10em;
-    }
-
-    img:hover{
-      opacity: 0.7;
-      transition: 0.2s;
-      cursor: pointer;
-    }
-
-    h3{
-      color: $color-text-primary;
-      transition: 0.2s;
-    }
-
-    h3:hover{
-      color: $color-text-secondary;
-      transition: 0.2s;
-      cursor: pointer;
+      background-color: color;
+      position: fixed;
+      
     }
   }
