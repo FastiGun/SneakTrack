@@ -5,6 +5,9 @@
 /.pnp
 .pnp.js
 
+# ide - Google IDX
+/.idx
+
 # testing
 /coverage
 
