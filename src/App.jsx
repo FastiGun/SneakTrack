@@ -52,10 +52,10 @@ function App() {
         </header>
         <div className="content">
           <Routes>
+            <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/my-account" element={<MyAccount />} />
-            <Route path="/" element={<Home />} />
           </Routes>
         </div>
       </div>

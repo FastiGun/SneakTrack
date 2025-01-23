@@ -52,13 +52,13 @@ function Login() {
         <div className="form-links">
           <Link
             className="form-link"
-            href="/forgot-password"
+            onClick={() => navigate('/forgot-password')}
           >
             Mot de passe oublié
           </Link>
           <Link
             className="form-link"
-            href="/register"
+            onClick={() => navigate('/register')}
           >
             Je n'ai pas de compte
           </Link>

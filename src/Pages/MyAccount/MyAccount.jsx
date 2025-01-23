@@ -12,14 +12,14 @@ const MyAccount = () => {
 
   useEffect(() => {
     if (!account) {
-      navigate('/login');
+      navigate('/');
     }
   }, [account, navigate]);
 
 
   const handleLogout = () => {
     context.logout();
-    navigate('/login');
+    navigate('/');
   }
 
   return (
