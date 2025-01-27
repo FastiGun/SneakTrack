@@ -39,7 +39,10 @@ function NavBar() {
         <div className="navbar-gauche">
           <h1 className="logo" onClick={() => navigate('/')}>SneakTrack</h1>
           { account ? 
+          <>
+            <h3 onClick={() => navigate('/my-collection') }>Ma collection</h3> 
             <h3 onClick={() => navigate('/my-account') }>Mon compte</h3> 
+          </>
             :
             <h3 onClick={() => navigate('/login') }>Me connecter</h3>
           }

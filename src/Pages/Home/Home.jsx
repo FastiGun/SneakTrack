@@ -13,7 +13,10 @@ const Home = () => {
   return (
     <>
         <h1 className="title">Bienvenue { account ?  account.username : "sur SneakTrack"}</h1>
-        <div className='home'>
+        { account ? 
+          <h3>Prends le contrôle de ta collection de sneakers !</h3>
+          : 
+          <div className='home'>
             <h3>Prends le contrôle de ta collection de sneakers !</h3>
             <div className="line">
                 <PlayArrowIcon/>
@@ -22,11 +25,11 @@ const Home = () => {
             <div className="line">
                 <PlayArrowIcon/>
                 <p>Découvre tes stats, relève des défis et faits vivre chaque paire de ta collection. Prêt à donner un nouveau souffle à ta collection ? Inscris-toi et commence dès maintenant !</p>
-            </div>
-            <h3>Prêt à donner un nouveau souffle à ta collection ? <h onClick={() => navigate('/register')}>Inscrivez-vous</h>  et commencez dès maintenant !</h3>
+          </div>
+          <h3>Prêt à donner un nouveau souffle à ta collection ? <h onClick={() => navigate('/register')}>Inscris-toi</h>  et commence dès maintenant !</h3>
         </div>
+        }   
     </>
-    
   );
 };
 
